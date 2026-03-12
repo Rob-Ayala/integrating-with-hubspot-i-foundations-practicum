@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Lista de Objetos Personalizados
+        .navigation
+            a(href="/update-cobj") + Añadir nuevo registro
+        table
+            tr
+                th Partner Name
+                th Partner Website
+                th Partnery Type
+            each object in data
+                tr
+                    td #{object.properties.partner_name}
+                    td #{object.properties.partner_website}
+                    td #{object.properties.partnery_type}

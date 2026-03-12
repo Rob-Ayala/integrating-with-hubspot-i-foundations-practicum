@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            h1 Crear Nueva Mascota
+            a(href="/") < Volver al inicio
+            form(method="POST")
+                label(for="partner_name") Partner Name:
+                input(type="text" name="partner_name" required)
+                label(for="partner_website") Partner Website:
+                input(type="text" name="partner_website" required)
+                label(for="partnery_type") Partnery Type:
+                input(type="text" name="partnery_type" required)
+                button(type="submit") Guardar Registro
